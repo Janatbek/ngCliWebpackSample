@@ -30,6 +30,7 @@ module.exports = function (wallaby) {
     resolve: {
       extensions: ['.js', '.ts'],
       modules: [
+        path.join(wallaby.projectCacheDir, 'node_modules'),
         path.join(wallaby.projectCacheDir, 'src/app'),
         path.join(wallaby.projectCacheDir, 'src')
       ]
